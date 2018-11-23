@@ -26,6 +26,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private TextView txtGetData;
     private Button btnGetAllData;
     private String allKickBoxers;
+    private Button btnTransition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         edtKickSpeed = findViewById(R.id.edtKickSpeed);
         txtGetData = findViewById(R.id.txtGetData);
         btnGetAllData = findViewById(R.id.btnGetAllData);
+        btnTransition = findViewById(R.id.btnNextActivity);
 
         txtGetData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,6 +91,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
                     }
                 });
+            }
+        });
+
+        btnTransition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
 
